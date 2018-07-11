@@ -20,5 +20,6 @@ public class SimpletestTest {
     public void testSum(int expRes, int op1, int op2) throws Exception {
         Assert.assertEquals(expRes, calc.sum(op1,op2));
 
+
     }
 }
