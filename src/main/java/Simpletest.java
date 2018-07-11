@@ -1,6 +1,6 @@
 public class Simpletest {
 
-    public int sum(int a, int b){
+    public double sum(double a, double b){
         return a + b;
     }
 
