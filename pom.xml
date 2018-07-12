@@ -20,6 +20,10 @@
         </plugins>
     </build>
 
+    <properties>
+        <cucumber.version>1.2.5</cucumber.version>
+    </properties>
+
     <repositories>
         <repository>
             <id>jcenter</id>
@@ -29,6 +33,27 @@
     </repositories>
 
     <dependencies>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>6.10</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>${cucumber.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-testng</artifactId>
+            <version>${cucumber.version}</version>
+            <scope>test</scope>
+        </dependency>
+
     <dependency>
         <groupId>org.testng</groupId>
         <artifactId>testng</artifactId>
@@ -42,7 +67,7 @@
         <artifactId>annotations</artifactId>
         <version>13.0</version>
     </dependency>
+  
     </dependencies>
 
 </project>
-
