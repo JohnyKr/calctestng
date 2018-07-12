@@ -25,6 +25,7 @@ public class SimpletestTest extends AbstractTestNGCucumberTests {
         result = calc.sum(a, b);
     }
 
+
     @Then("^result should be (-{0,1}\\d)")
     public void then(double res) {
         Assert.assertEquals(res, result, 0.0001);
